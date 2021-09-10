@@ -49,7 +49,27 @@ export class InicioPage implements OnInit {
       icon: 'calendar-outline',
       name: 'Date', 
       redirectTo: '/datetime'
-    }
+    },
+    {
+      icon: 'cube-outline',
+      name: 'Ion-Fab', 
+      redirectTo: '/ion-fab'
+    },
+    {
+      icon: 'grid-outline',
+      name: 'Grid', 
+      redirectTo: '/grid'
+    },
+    {
+      icon: 'attach-outline',
+      name: 'Scroll-Infinite', 
+      redirectTo: '/scroll-infi'
+    },
+    {
+      icon: 'fast-food-outline',
+      name: 'Input', 
+      redirectTo: '/input'
+    }    
   ]; 
 
   constructor() { }

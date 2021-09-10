@@ -3,10 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 //aqui estan las rutas principales
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'inicio',
-    pathMatch: 'full'
+  { 
+    path: '', redirectTo: 'inicio', pathMatch: 'full' 
   },
   {
     path: 'inicio',
@@ -39,6 +37,26 @@ const routes: Routes = [
   {
     path: 'datetime',
     loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
+  {
+    path: 'ion-fab',
+    loadChildren: () => import('./pages/ion-fab/ion-fab.module').then( m => m.IonFabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'scroll-infi',
+    loadChildren: () => import('./pages/scroll-infi/scroll-infi.module').then( m => m.ScrollInfiPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
   }
 ];
 
